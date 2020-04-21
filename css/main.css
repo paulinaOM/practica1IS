@@ -1,0 +1,156 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Century Gothic,Arial, Helvetica, sans-serif;/*Tipo de letra para todo el texto de la página*/
+    font-size: 18px;/*Tamaño de texto general de la página*/
+}
+
+header{
+    background-image: url(../img/bradcam.png);
+    background-size: 100% 100%; /*Pide el tamaño sobre los ejes x y*/
+    background-position: center center;
+    background-repeat: no-repeat;/*No repetir la imagen de fondo*/
+    color: white;/*Color del texto*/
+    height: 100vh;/*Permite adecuar la altura al view port*/
+}
+
+header #menu{
+    padding: 50px 0;
+}
+
+header #menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+header #menu ul li{
+    display: inline-block;/*Coloca los elementos en línea en el mismo bloque, uno al lado del otro*/
+    padding: 10px;/*Separación interior entre cada elemento del menú*/
+    vertical-align: middle;/*Alinea los elementos del menú de forma vertical al centro*/
+}
+
+header #menu ul li a{
+    display: inline-block;
+}
+
+header #menu ul li a{
+    color: white;
+    text-decoration: none;/*Elimina el estilo subrayado (y cualquier elemento decorado) de los elementos del menú*/
+}
+
+header #menu ul li a:hover{/*Aplica el estilo cuando se coloca el mouse sobre un elemento del menú*/
+    text-decoration: underline;/*Aplica decoración de subrayado*/
+}
+
+header #menu ul #logo{
+    margin-right: 40%;/*Separa el logo del resto de los elementos del menú*/
+    margin-left: 100px;
+}
+
+
+/************Inicia la sección MAIN***************/
+#main-container header main{
+    margin: 0 auto;/*Cero arriba y abajo. Auto: A los lados. Permite que el navegador calcule automaticamente el espacio y lo centre*/
+    width: 1400px;
+}
+#main-container header main div{
+    display: inline-block;/*Coloca los div de la sección main en línea en el mismo bloque, uno al lado del otro*/
+    vertical-align: middle;
+}
+
+#main-container header main .text h1{   
+    font-size: 70px;
+    padding-left: 5px;
+}
+
+#main-container header main .text p{   
+    font-size: 22px;
+    padding: 20px 5px; /*Separación arriba y abajo de 20px. A los lados 5px*/
+}
+
+button{
+    background: #24d9e6; /*Color de fondo*/
+    border: 0; /*Elimina el borde del botón*/
+    border-radius:  3px; /*Borde radial. Redondeado*/
+    color: white; /*Color de texto*/
+    cursor: pointer; /*Propiedad para que el cursor se muestre como una "manita"*/
+    font-size: 24px; /*Tamaño de letra*/
+    padding: 20px 25px; /*Separacioón interior entre el texto y el borde del botón*/
+    margin: 40px 0;
+}
+
+button:hover{ /*Aplica el estilo cuando se coloca el mouse sobre un elemento del menú*/
+    background: #14929b; /*Cambia el color de fondo del botón*/
+}
+
+#main-container header main .image{   /*Aplicable al*/
+    width: 700px; /*Aumenta el tamaño de la capa*/
+    text-align: right; /*Alinea el contenido dentro de una capa*/
+}
+
+
+/**********************Secciones FEATURES y CONFIG**********************/
+
+
+.layout{ /*Centrar los layouts y asignar espaciado arriba y abajo*/
+    width: 1280px;
+    margin: 250px auto;
+}
+
+#main-container .section .layout div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#main-container .section .layout h3{ /*Fuente y espaciado interior superior e inferior específicos para la etiqueta h3*/    font-size: 48px;
+    padding: 25px 0;
+}
+
+#main-container .section .layout p{ /*Interlineado y espaciado interior superior e inferior específicos para la etiqueta de párrafo*/
+    padding: 25px 0;
+    line-height: 32px; /*interlineado*/
+}
+
+#main-container .section .layout-left .text{ /*Propiedades específicas del layout izquierdo para el texto*/
+    width: 500px;
+}
+
+#main-container .section .layout-left .image{ /*Propiedades específicas del layout izquierdo para imagen*/
+    width: 770px;
+    text-align: right;
+}
+
+#main-container .section .layout-right .text{
+    width: 500px;
+}
+
+#main-container .section .layout-right .image{
+    width: 770px;
+    text-align: center;
+}
+#main-container .section .layout-right .text{ /*Propiedades específicas del layout derecho para el texto*/
+    width: 500px;
+}
+
+#main-container .section .layout-right .image{ /*Propiedades específicas del layout derecho para imagen*/
+    width: 770px;
+    text-align: center;
+}
+
+footer{ /*Parte inferior del sitio*/
+    background-color: black; /*Color de fondo negro*/
+    color: white; /*Texto blanco*/
+    padding: 150px 20px; /*Espaciado interior*/
+    text-align: center; /*Alinea el texto al centro*/
+}
+/***Alineacion de los párrafos***/
+p{
+    text-align: justify;/*alineación justificada del texto*/
+}
+/***Iconos***/
+img.iconos{
+    vertical-align: middle;/*Para los íconos de la barra de navegación y los de contacto, alínea el texto al centro del ícono*/
+}
